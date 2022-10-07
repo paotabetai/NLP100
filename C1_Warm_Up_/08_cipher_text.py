@@ -7,6 +7,7 @@ def cipher(sentence: str) -> str:
 
     return result
 
+
 sentence = "AbCdEfG12345,./;"
 
 print(cipher(sentence))

@@ -1,5 +1,5 @@
-from mimetypes import init
 import sys
+
 
 def csu(filepath: str) -> None:
     initial_set = set()
@@ -10,7 +10,6 @@ def csu(filepath: str) -> None:
             line = f.readline()
     for character in sorted(list(initial_set)):
         print(character)
-
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 import sys
 
+
 def split(filepath: str, n: int) -> None:
 
     with open(filepath) as f:
@@ -15,7 +16,8 @@ def split(filepath: str, n: int) -> None:
             tmp_counter += 1
             total_counter += 1
             if tmp_counter == file_n or total_counter == f_len:
-                with open("{}".format(filepath + str(file_counter)), "w") as f_r:
+                num = filepath + str(file_counter)
+                with open("{}".format(num), "w") as f_r:
                     f_r.writelines(tmp_line)
                 tmp_line = []
                 tmp_counter = 0

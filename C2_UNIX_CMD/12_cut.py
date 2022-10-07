@@ -1,5 +1,6 @@
 import sys
 
+
 def cut(filepath: str, output_1: str, output_2: str) -> None:
     result_1 = []
     result_2 = []
@@ -16,6 +17,7 @@ def cut(filepath: str, output_1: str, output_2: str) -> None:
 
     with open(output_2, mode='w') as f:
         f.write('\n'.join(result_2))
+
 
 if __name__ == "__main__":
     filepath = sys.argv[1]

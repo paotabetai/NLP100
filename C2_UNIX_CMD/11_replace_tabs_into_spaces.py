@@ -1,6 +1,7 @@
 import re
 import sys
 
+
 def replace(filepath: str) -> str:
     result = []
     with open(filepath) as f:
@@ -9,6 +10,7 @@ def replace(filepath: str) -> str:
             replaced_line = re.sub(r'\t', " ", line)
             result.append(replaced_line)
     return ''.join(result)
+
 
 if __name__ == "__main__":
     filepath = sys.argv[1]

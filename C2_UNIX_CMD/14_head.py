@@ -1,5 +1,6 @@
 import sys
 
+
 def head(filepath: str, n: int) -> None:
 
     with open(filepath) as f:

@@ -1,5 +1,6 @@
 import sys
 
+
 def tail(filepath: str, n: int) -> None:
 
     with open(filepath) as f:

@@ -1,5 +1,6 @@
 import sys
 
+
 def paste(input_1: str, input_2: str, output: str) -> None:
 
     with open(input_1) as f:
@@ -7,9 +8,14 @@ def paste(input_1: str, input_2: str, output: str) -> None:
 
     with open(input_2) as f:
         input_2_list = f.readlines()
-    
+
     with open(output, mode="w") as f:
-        f.write('\n'.join([col1.strip() + "\t" + col2.strip() for col1, col2 in zip(input_1_list, input_2_list)]))
+        f.write(
+            '\n'.join(
+                [col1.strip() + "\t" + col2.strip()
+                    for col1, col2 in zip(input_1_list, input_2_list)]
+                )
+            )
 
 
 if __name__ == "__main__":
