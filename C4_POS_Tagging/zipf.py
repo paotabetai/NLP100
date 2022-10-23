@@ -23,6 +23,7 @@ def calculate_frequency(filepath: str) -> None:
         counter += 1
     plt.plot(x, y)
     ax = plt.gca()
+    ax.set_xscale('log') 
     ax.set_yscale('log')
     plt.show()
 
