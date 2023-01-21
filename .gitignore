@@ -1,4 +1,5 @@
 jawiki-country*
-*.txt
+*.txt*
 *.pyc
 *.json
+cabocha*
